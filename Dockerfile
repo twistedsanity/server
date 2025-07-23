@@ -5,7 +5,7 @@
 ARG BASE_IMAGE_VERSION=latest
 FROM ghcr.io/music-assistant/base:$BASE_IMAGE_VERSION AS builder
 
-ADD dist dist
+#ADD dist dist
 COPY requirements_all.txt .
 
 # ensure UV is installed
