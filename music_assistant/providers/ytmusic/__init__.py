@@ -219,8 +219,6 @@ class YoutubeMusicProvider(MusicProvider):
                 break
         else:
             self.language = "en"
-        if not await self._user_has_ytm_premium():
-            raise LoginFailed("User does not have Youtube Music Premium")
 
     @property
     def supported_features(self) -> set[ProviderFeature]:
